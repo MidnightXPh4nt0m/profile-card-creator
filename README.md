@@ -6,7 +6,7 @@ A editor what allows you to create profile card's easly and more faster than usu
 
 Steps's List:
 
-- [x] Clean the react project
+- [x] Clean the React project
 - [ ] Edit App component
 - [ ] Create details form for editing card details
 - [ ] Create Control component for more editing power
