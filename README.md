@@ -1,20 +1,20 @@
 # Profile Card Creator
 
-A editor what allows you to create profile card's easly and more faster than usual.
+An editor to create profile card's easier and more faster than usual.
 
 ## Components
 
 ### Details
 
-Component, which get author data and save them in the state.
+Component, which gets author's data and save them in the state.
 
 ### Control
 
-Component, which gives some tools like background color, text color, card size, and many other tools to author to have a good control to the card
+Component, which gives some tools like background color, text color, card size, and many other's to author to have a good control to the card.
 
 ### Preview
 
-Component, which allows other to see a live preview to the card.
+Component, which allows author to see a live preview to the card.
 
 ### ToDo
 
