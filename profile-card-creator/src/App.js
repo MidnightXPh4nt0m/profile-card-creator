@@ -40,7 +40,7 @@ class Details extends Component {
   }
 }
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Details />
