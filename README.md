@@ -16,6 +16,20 @@ Component, which gives some tools like background color, text color, card size, 
 
 Component, which allows author to see a live preview to the card.
 
+## Start while the project is not build yet
+
+Because this project is not build yet so you have to do some activties for run it.
+
+1. Start a terminal and go to the project directory then go to the profile-card-creator directory.
+
+2. run `npm i` or `npm install` and wait until install completed.
+
+3. Then start the project using `npm start` if it returns an error install bootstrap and jquery again using.
+
+    ```bash
+    npm i bootstrap@next jquery
+    ```
+
 ### ToDo
 
 - [x] Clean the react project
