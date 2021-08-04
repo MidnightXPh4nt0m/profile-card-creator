@@ -8,11 +8,24 @@ class Details extends Component {
     firstName: '',
     lastName: '',
     phoneNumber: '',
-    emailAddress: ''
+    emailAddress: '',
+    displays: {
+      displayFirstName: true,
+      displayLastName: true,
+      displayPhoneNumber: false,
+      displayEmailAddress: false
+    }
   }
   handleChange = (e) => {
-    const { value, id } = e.target
-    this.setState({ [id]: value })
+    const { id, value, type, checked } = e.target
+
+    if (type === 'checkbox') {
+      this.setState({
+        displays: { ...this.state.displays, [id]: checked },
+      })
+    } else {
+      this.setState({ [id]: value })
+    }
   }
 
   render() {
@@ -23,7 +36,7 @@ class Details extends Component {
           <input type="text" className="form-control" id="firstName" value={this.state.firstName} placeholder="John" onChange={this.handleChange} />
           <label htmlFor="firstName" className="form-label">First Name <span className="text-danger"><b>*</b></span></label>
           <div className="form-check">
-            <input className="form-check-input" type="checkbox" value="" id="displayFirstName" checked disabled />
+            <input className="form-check-input" type="checkbox" id="displayFirstName" onChange={this.handleChange} checked disabled />
             <label className="form-check-label" htmlFor="displayFirstName">
               Display
             </label>
@@ -33,17 +46,17 @@ class Details extends Component {
           <input type="text" className="form-control" id="lastName" value={this.state.lastName} placeholder="Doe" onChange={this.handleChange} />
           <label htmlFor="lastName" className="form-label">Last Name <span className="text-danger"><b>*</b></span></label>
           <div className="form-check">
-            <input className="form-check-input" type="checkbox" value="" id="displayLastName" checked disabled />
+            <input className="form-check-input" type="checkbox" id="displayLastName" onChange={this.handleChange} checked disabled />
             <label className="form-check-label" htmlFor="displayLastName">
               Display
             </label>
           </div>
         </div>
         <div className="form-floating mb-3">
-          <input type="text" className="form-control" id="phoneNumber" value={this.state.phoneNumber} placeholder="+000000000000" onChange={this.handleChange} />
+          <input type="tel" className="form-control" id="phoneNumber" value={this.state.phoneNumber} placeholder="+000000000000" onChange={this.handleChange} />
           <label htmlFor="phoneNumber" className="form-label">Phone Number</label>
           <div className="form-check">
-            <input className="form-check-input" type="checkbox" value="" id="displayPhoneNumber" />
+            <input className="form-check-input" type="checkbox" id="displayPhoneNumber" onChange={this.handleChange} />
             <label className="form-check-label" htmlFor="displayPhoneNumber">
               Display
             </label>
@@ -53,7 +66,7 @@ class Details extends Component {
           <input type="email" className="form-control" id="emailAddress" value={this.state.emailAddress} placeholder="johndoe@example.com" onChange={this.handleChange} />
           <label htmlFor="emailAddress" className="form-label">Email Address</label>
           <div className="form-check">
-            <input className="form-check-input" type="checkbox" value="" id="displayEmailAddress" />
+            <input className="form-check-input" type="checkbox" id="displayEmailAddress" onChange={this.handleChange} />
             <label className="form-check-label" htmlFor="displayEmailAddress">
               Display
             </label>
