@@ -36,8 +36,8 @@ Because this project is not build yet so you have to do some activties for run i
 - [x] Edit App component
 - [x] Add bootstrap to the project
 - [x] Create details form for editing card details
-- [ ] Create Control component for more editing power
-- [ ] Create a Preview component to see the live preview
+- [x] Create a Preview component to see the live preview
 - [ ] Build and publishing the project
+- [ ] Add feauters
 
 I glad to recieve pull request's.
