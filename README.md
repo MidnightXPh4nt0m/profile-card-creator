@@ -16,7 +16,7 @@ Component, which gives some tools like background color, text color, card size, 
 
 Component, which allows author to see a live preview to the card.
 
-## Start while the project is not build yet
+## Start while the project has not build yet
 
 Because this project is not build yet so you have to do some activties for run it.
 
