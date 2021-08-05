@@ -79,7 +79,6 @@ class Details extends Component {
   }
 }
 
-// TODO Create Preview component props and get data from Details compoent
 const Preview = (props) => {
   let firstName = props.firstName
   let lastName = props.lastName
