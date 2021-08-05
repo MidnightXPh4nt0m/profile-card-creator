@@ -30,6 +30,13 @@ Because this project is not build yet so you have to do some activties for run i
     npm i bootstrap@next jquery
     ```
 
+## Start the project
+Follow the list:
+1. `git clone https://github.com/mahdipuya/profile-card-creator.git`
+2. `cd profile-card-creator/profile-card-creator`
+3. `npm i -g serve`
+4. `serve -s build`
+
 ### ToDo
 
 - [x] Clean the react project
@@ -37,7 +44,7 @@ Because this project is not build yet so you have to do some activties for run i
 - [x] Add bootstrap to the project
 - [x] Create details form for editing card details
 - [x] Create a Preview component to see the live preview
-- [ ] Build and publishing the project
+- [x] Build and publishing the project
 - [ ] Add feauters
 
-I glad to recieve pull request's.
+I glad to recieve pull requests and new feauters you add them.
